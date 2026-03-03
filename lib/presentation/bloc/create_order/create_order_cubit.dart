@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ordertest/domain/entities/order.dart';
+import 'package:ordertest/domain/entities/order/order.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:ordertest/domain/repository/repository.dart';
 

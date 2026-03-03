@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:ordertest/domain/entities/order.dart';
+import 'package:ordertest/domain/entities/order/order.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'api.g.dart';

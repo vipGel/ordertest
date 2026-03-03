@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:ordertest/core/error.dart';
 import 'package:ordertest/core/failure.dart';
 import 'package:ordertest/data/api/api.dart';
-import 'package:ordertest/domain/entities/order.dart';
+import 'package:ordertest/domain/entities/order/order.dart';
 import 'package:ordertest/domain/repository/repository.dart';
 
 class RepositoryImpl implements Repository {

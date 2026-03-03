@@ -6,8 +6,8 @@ import 'package:ordertest/data/interceptors/internet_connection_checker.dart';
 import 'package:ordertest/data/repository/repository.dart';
 import 'package:ordertest/domain/repository/repository.dart';
 
-
 final di = GetIt.instance;
+const url = '';
 
 Future<void> initDI() async {
   final interceptors = [
@@ -15,9 +15,8 @@ Future<void> initDI() async {
     InternetConnectionCheckerInterceptor(),
   ];
 
-  final dio = DioConfigurator().initDio(interceptors: interceptors, url: '');
+  final dio = DioConfigurator().initDio(interceptors: interceptors, url: url);
   di.registerLazySingleton(() => dio);
   di.registerLazySingleton(() => Api(di()));
   di.registerLazySingleton<Repository>(() => RepositoryImpl(di()));
-
 }
